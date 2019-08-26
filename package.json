@@ -1,0 +1,52 @@
+{
+  "name": "sms-management-application-api",
+  "version": "1.0.0",
+  "description": "An SMS management API mimicking messaging between contacts",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./index.js",
+    "test": "NODE_ENV=test nyc mocha --require babel-register ./server/tests/*.test.js --timeout 10000 --exit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/3m3kalionel/SMS-Management-Application-Api.git"
+  },
+  "keywords": [
+    "contact-sms",
+    "management",
+    "api",
+    "contacts",
+    "sms"
+  ],
+  "author": "3m3kalionel",
+  "license": "MIT",
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
+    "body-parser": "^1.18.3",
+    "dotenv": "^7.0.0",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.3",
+    "mongoose-beautiful-unique-validation": "^7.1.1",
+    "morgan": "^1.9.1"
+  },
+  "devDependencies": {
+    "@shelf/jest-mongodb": "^1.0.0",
+    "cuid": "^2.1.6",
+    "eslint": "5.3.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "2.14.0",
+    "jest": "^24.7.1",
+    "mocha": "^6.1.4",
+    "mongodb-memory-server": "^5.1.0",
+    "nodemon": "^1.18.9",
+    "nyc": "^14.0.0",
+    "should": "^13.2.3",
+    "supertest": "^4.0.2"
+  },
+  "bugs": {
+    "url": "https://github.com/3m3kalionel/SMS-Management-Application-Api/issues"
+  },
+  "homepage": "https://github.com/3m3kalionel/SMS-Management-Application-Api#readme"
+}
